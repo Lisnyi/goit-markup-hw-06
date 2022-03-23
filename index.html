@@ -48,7 +48,34 @@
             </button>
             <div data-modal class="backdrop is-hidden">
                 <div class="modal">
-                    <button data-modal-close type="button" class="modal-btn"><svg class="close-icon"><use href="./images/icons.svg#close"></use></svg></button>
+                    <button data-modal-close type="button" class="modal-close"><svg class="close-icon"><use href="./images/icons.svg#close"></use></svg></button>
+                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                    <form class="modal-form">
+                        <div class="form-field">
+                            <label for="user-name" class="form-lable">Имя</label>
+                            <input type="text" id="user-name" name="user-name" class="form-input" placeholder=" ">
+                            <span></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="tel" class="form-lable">Телефон</label>
+                            <input type="tel" id="tel" name="tel" class="form-input" placeholder=" ">
+                            <span></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="mail" class="form-lable">Почта</label>
+                            <input type="email" id="mail" name="email" class="form-input" placeholder=" ">
+                            <span></span>
+                        </div>
+                        <div class="form-field">
+                            <label for="comment" class="form-lable">Комментарий</label>
+                            <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        </div>
+                        <label>
+                            <input type="checkbox" name="check">
+                            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+                        </label>
+                        <button type="submit">Отправить</button>
+                    </form>
                 </div>
             </div>
         </section>
