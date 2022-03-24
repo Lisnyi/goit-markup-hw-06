@@ -51,36 +51,30 @@
                     <button data-modal-close type="button" class="modal-close"><svg class="close-icon"><use href="./images/icons.svg#close"></use></svg></button>
                     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                     <form class="modal-form">
-                        <div class="form-field">
-                            <label for="user-name" class="form-lable">Имя</label>
-                            <input type="text" id="user-name" name="user-name" class="form-input">
+                        <label class="form-field"><span class="form-lable">Имя</span>
                             <svg class="field-icon">
                                 <use href="./images/icons.svg#person"></use>
                             </svg>
-                        </div>
-                        <div class="form-field">
-                            <label for="tel" class="form-lable">Телефон</label>
-                            <input type="tel" id="tel" name="tel" class="form-input">
-                            <span><svg class="field-icon">
+                            <input type="text" name="user-name" class="form-input">
+                        </label>
+                        <label class="form-field"><span class="form-lable">Телефон</span>
+                            <svg class="field-icon">
                                 <use href="./images/icons.svg#phone"></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="form-field">
-                            <label for="mail" class="form-lable">Почта</label>
-                            <input type="email" id="mail" name="email" class="form-input">
-                            <span><svg class="field-icon">
+                            </svg>
+                            <input type="tel" name="tel" class="form-input">
+                        </label>
+                        <label class="form-field"><span class="form-lable">Почта</span>
+                            <svg class="field-icon">
                                 <use href="./images/icons.svg#email"></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="form-field">
-                            <label for="comment" class="form-lable">Комментарий</label>
+                            </svg>
+                            <input type="email" name="email" class="form-input">
+                        </label>
+                        <label class="form-field"><span class="form-lable">Комментарий</span>
                             <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-comment"></textarea>
-                        </div>
+                        </label>
                         <label class="label-check">
-                            <input type="checkbox" name="check" class="modal-check">
-                            Соглашаюсь с рассылкой и принимаю <a href="" class="link check-link">Условия договора</a>
+                            <input type="checkbox" name="check" class="modal-check visually-hidden">
+                            <span class="check-icon"></span>Соглашаюсь с рассылкой и принимаю <a href="" class="link check-link">Условия договора</a>
                         </label>
                         <button type="submit" class="modal-button">Отправить</button>
                     </form>
@@ -420,6 +414,15 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                <form>
+                    <input type="email" name="email" placeholder="E-mail" class="subscribe-input">
+                    <button type="submit" class="subscribe-button">Подписаться <svg class="subscribe-icon">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg></button>
+                </form>
             </div>
         </div>
     </footer>
